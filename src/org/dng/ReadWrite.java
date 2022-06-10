@@ -21,13 +21,12 @@ public class ReadWrite {
     public static List<String> readFromDisk(){
         List<String> stringsOfFile = new LinkedList<>();
         try(BufferedReader breader = new BufferedReader(new FileReader(Main.getFileName()))) {
-            String str;
-            while ((str = breader.readLine())!=null){
-                //some action
-                stringsOfFile.add(str);
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+//            String str;
+//            while ((str = breader.readLine())!=null){
+//                //some action
+//                stringsOfFile.add(str);
+//            }
+            stringsOfFile = breader.lines().toList();
         } catch (IOException e) {
             e.printStackTrace();
         }
