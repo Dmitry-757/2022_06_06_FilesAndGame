@@ -1,0 +1,2 @@
+player choice = ROCK; computer choice = PAPER; result of game = ComputerWin
+player choice = SCISSORS; computer choice = PAPER; result of game = PlayerWin
